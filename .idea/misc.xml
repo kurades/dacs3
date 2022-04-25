@@ -4,9 +4,12 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="..\:/Project/dacs3/app/src/main/res/drawable/custom_input.xml" value="0.156" />
+        <entry key="..\:/Project/dacs3/app/src/main/res/drawable/line.xml" value="0.156" />
         <entry key="..\:/Project/dacs3/app/src/main/res/drawable/sign_button.xml" value="0.156" />
+        <entry key="..\:/Project/dacs3/app/src/main/res/drawable/stroke.xml" value="0.1695" />
         <entry key="..\:/Project/dacs3/app/src/main/res/layout/activity_main.xml" value="0.27447916666666666" />
-        <entry key="..\:/Project/dacs3/app/src/main/res/layout/login.xml" value="0.4" />
+        <entry key="..\:/Project/dacs3/app/src/main/res/layout/login.xml" value="0.2" />
+        <entry key="..\:/Project/dacs3/app/src/main/res/layout/sign_up.xml" value="0.4" />
       </map>
     </option>
   </component>
