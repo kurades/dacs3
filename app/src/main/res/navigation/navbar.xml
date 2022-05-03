@@ -21,8 +21,9 @@
         android:label="fragment_search"
         tools:layout="@layout/fragment_search" />
     <fragment
-        android:id="@+id/settingsFragment"
-        android:name="com.example.dacs3.SettingsFragment"
-        android:label="SettingsFragment" />
+        android:id="@+id/profileFragment"
+        android:name="com.example.dacs3.ProfileFragment"
+        android:label="fragment_profile"
+        tools:layout="@layout/fragment_profile" />
 
 </navigation>

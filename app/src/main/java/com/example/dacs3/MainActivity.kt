@@ -29,7 +29,7 @@ class MainActivity : AppCompatActivity() {
         bottomNavigationView.setupWithNavController(navController)
 
         val layout : RelativeLayout = findViewById(R.id.topNav)
-        val view = LayoutInflater.from(this).inflate(R.layout.top_navbar,layout,true)
+        LayoutInflater.from(this).inflate(R.layout.top_navbar,layout,true)
 
         val qrButton:FloatingActionButton = findViewById(R.id.fab)
         qrButton.setOnClickListener {

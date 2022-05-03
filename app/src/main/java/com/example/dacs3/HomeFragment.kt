@@ -39,7 +39,6 @@ class HomeFragment : Fragment() {
                 homeBinding.expandedViewBr.visibility = if(expand) View.VISIBLE else View.GONE
             }
         }
-
         homeBinding.RecyclerViewRecent.adapter = AdapterBorrowing(data)
         homeBinding.RecyclerViewRecent.layoutManager = LinearLayoutManager(context)
         homeBinding.textViewRc.setOnClickListener{
@@ -48,7 +47,6 @@ class HomeFragment : Fragment() {
                 homeBinding.expandedViewRc.visibility = if(expand) View.VISIBLE else View.GONE
             }
         }
-
         homeBinding.RecyclerViewRequest.adapter = AdapterBorrowing(data)
         homeBinding.RecyclerViewRequest.layoutManager = LinearLayoutManager(context)
         homeBinding.textViewRq.setOnClickListener{
