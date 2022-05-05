@@ -40,8 +40,6 @@ class AdapterBorrowing(private val dataSet: ArrayList<Book>) :
         Picasso.get()
             .load(dataSet[position].thumbnail)
             .placeholder(R.drawable.ic_launcher_background)
-            .resize(50, 50)
-            .centerCrop()
             .into(viewHolder.thubnail)
 
         viewHolder.title.text = dataSet[position].title

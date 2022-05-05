@@ -35,8 +35,6 @@ class AdapterDiscoverChildren(private val dataSet : ArrayList<Book>) : RecyclerV
         Picasso.get()
             .load(dataSet[position].thumbnail)
             .placeholder(R.drawable.ic_launcher_background)
-            .resize(50, 50)
-            .centerCrop()
             .into(holder.thumbnail)
         holder.title.text = dataSet[position].title
         holder.author.text = dataSet[position].author

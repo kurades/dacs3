@@ -12,6 +12,7 @@ import com.example.dacs3.Adapter.AdapterDiscoverParent
 import com.example.dacs3.databinding.FragmentDiscoverBinding
 import com.example.dacs3.model.Book
 import com.example.dacs3.model.DiscoverParent
+import com.example.dacs3.model.Location
 
 class DiscoverFragment : Fragment() {
     private lateinit var disBinding: FragmentDiscoverBinding
@@ -27,7 +28,9 @@ class DiscoverFragment : Fragment() {
         val data = ArrayList<DiscoverParent>()
         val childData = ArrayList<Book>()
         for (i in 1..5) {
-            childData.add(Book("123","this is the very long long title","https://www.toponseek.com/blogs/wp-content/uploads/2019/06/toi-uu-hinh-anh-optimize-image-4-1200x700.jpg","this is the dsescription","author unknown","publisher unknown"))
+            childData.add(Book("123","this is the title","https://product.hstatic.net/200000343865/product/6_90462943d6e348c8a807fddc3f0d688b_master.jpg","this is description","this is author","publisher",123456,
+                Location("1","2","3")
+            ))
         }
 
 //        5 children field

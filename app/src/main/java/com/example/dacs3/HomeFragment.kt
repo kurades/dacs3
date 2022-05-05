@@ -10,6 +10,7 @@ import androidx.recyclerview.widget.LinearLayoutManager
 import com.example.dacs3.Adapter.AdapterBorrowing
 import com.example.dacs3.databinding.FragmentHomeBinding
 import com.example.dacs3.model.Book
+import com.example.dacs3.model.Location
 
 class HomeFragment : Fragment() {
     private lateinit var homeBinding: FragmentHomeBinding
@@ -28,7 +29,9 @@ class HomeFragment : Fragment() {
         homeBinding.RecyclerViewBorrowing.layoutManager = LinearLayoutManager(context)
         val data = ArrayList<Book>()
         for (i in 1..5) {
-            data.add(Book("123","this is the title","https://www.toponseek.com/blogs/wp-content/uploads/2019/06/toi-uu-hinh-anh-optimize-image-4-1200x700.jpg","this is the dsescription","author unknown","publisher unknown"))
+            data.add(Book("123","this is the title","https://product.hstatic.net/200000343865/product/6_90462943d6e348c8a807fddc3f0d688b_master.jpg","this is description","this is author","publisher",123456,
+                Location("1","2","3")
+            ))
         }
 
 
