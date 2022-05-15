@@ -51,6 +51,18 @@
 <!--                <category android:name="android.intent.category.LAUNCHER" />-->
 <!--            </intent-filter>-->
         </activity>
+        <activity
+            android:name=".PaycheckActivity"
+            android:windowSoftInputMode="adjustPan"
+            android:exported="true"
+            android:label="QR Paycheck"
+            android:theme="@style/Theme.Dacs3.DarkActionBar">
+<!--                        <intent-filter>-->
+<!--                            <action android:name="android.intent.action.MAIN" />-->
+
+<!--                            <category android:name="android.intent.category.LAUNCHER" />-->
+<!--                        </intent-filter>-->
+        </activity>
     </application>
 
 </manifest>

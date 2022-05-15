@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/textView12"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:drawableStart="@drawable/ic_baseline_person_24"
+        android:drawablePadding="15dp"
+        android:drawableTint="@color/primary"
+        android:text="User name"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView13"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:drawableStart="@drawable/ic_baseline_calendar_month_24"
+        android:drawablePadding="15dp"
+        android:drawableTint="@color/primary"
+        android:text="Borrow day : ##/##/####"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView12" />
+
+    <TextView
+        android:id="@+id/textView14"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:drawableStart="@drawable/ic_baseline_library_books_24"
+        android:drawablePadding="15dp"
+        android:drawableTint="@color/primary"
+        android:text="Total borrow : 3"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView13" />
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="84dp"
+        app:cardCornerRadius="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView14">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="300dp"
+            android:layout_height="match_parent"
+            android:padding="10dp">
+
+            <TextView
+                android:id="@+id/textView33"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:elevation="10dp"
+                android:text="PLEASE GIVE THIS QR CODE TO LIBRARIAN"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageView
+                android:id="@+id/qrHolder"
+                android:layout_width="200dp"
+                android:layout_height="200dp"
+                android:layout_marginTop="20dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/textView33"
+                app:srcCompat="@drawable/stroke" />
+
+            <Button
+                android:id="@+id/button8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:backgroundTint="@color/primary"
+                android:text="Detail"
+                android:textColor="@color/white"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/qrHolder" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -21,9 +21,9 @@ class ProfilePaymentFragment : Fragment() {
         paymentBinding = FragmentProfilePaymentBinding.inflate(inflater, container, false)
         paymentBinding.subscriptionRecyclerView.layoutManager = LinearLayoutManager(context)
         val data = ArrayList<Subscription>()
-        for(i in 1..5){
-            data.add(Subscription(3,40,123456))
-        }
+        data.add(Subscription(3,123456,"BASIC","100 reads book per month","Advance service","2 books per loan"))
+        data.add(Subscription(5,456789,"ADVANCE","200 reads book per month","Advance service","3 books per loan"))
+        data.add(Subscription(7,987654,"PREMIUM","300 reads book per month","Advance service","4 books per loan"))
         paymentBinding.subscriptionRecyclerView.adapter = AdapterSubscription(data)
         return paymentBinding.root
     }

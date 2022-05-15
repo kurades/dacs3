@@ -27,7 +27,6 @@
                 android:text="Borrowing"
                 android:textColor="#000000"
                 android:textSize="24sp" />
-
             <RelativeLayout
                 android:id="@+id/expanded_view_br"
                 android:layout_width="match_parent"

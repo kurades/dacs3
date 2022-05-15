@@ -6,8 +6,13 @@ import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.LayoutInflater
+import android.view.Menu
+import android.view.MenuItem
+import android.view.View
 import android.widget.FrameLayout
 import android.widget.RelativeLayout
+import android.widget.Switch
+import androidx.appcompat.app.ActionBar
 import androidx.appcompat.app.AlertDialog
 import androidx.navigation.findNavController
 import androidx.navigation.ui.setupWithNavController
@@ -37,7 +42,15 @@ class MainActivity : AppCompatActivity() {
             intentIntegrator.setDesiredBarcodeFormats(listOf(IntentIntegrator.QR_CODE))
             intentIntegrator.initiateScan()
         }
+
     }
+    fun onClick(view: View) {
+        val intent = Intent(this,PaycheckActivity::class.java)
+        startActivity(intent)
+    }
+
+
+
 
     override fun onActivityResult(requestCode: Int, resultCode: Int, data: Intent?) {
         super.onActivityResult(requestCode, resultCode, data)
