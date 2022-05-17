@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/manager"
+    app:startDestination="@id/managerHomeFragment">
+    <fragment
+        android:id="@+id/managerHomeFragment"
+        android:name="com.example.dacs3.ManagerHomeFragment"
+        android:label="fragment_manager_home"
+        tools:layout="@layout/fragment_manager_home" />
+    <fragment
+        android:id="@+id/managerSearchFragment"
+        android:name="com.example.dacs3.ManagerSearchFragment"
+        android:label="fragment_manager_search"
+        tools:layout="@layout/fragment_manager_search" />
+    <fragment
+        android:id="@+id/managerProfileFragment"
+        android:name="com.example.dacs3.ManagerProfileFragment"
+        android:label="fragment_manager_profile"
+        tools:layout="@layout/fragment_manager_profile" />
+    <fragment
+        android:id="@+id/MHRequestFragment"
+        android:name="com.example.dacs3.MHRequestFragment"
+        android:label="fragment_m_h_request"
+        tools:layout="@layout/fragment_m_h_request" />
+    <fragment
+        android:id="@+id/MHConfirmFragment"
+        android:name="com.example.dacs3.MHConfirmFragment"
+        android:label="fragment_m_h_confirm"
+        tools:layout="@layout/fragment_m_h_confirm" />
+</navigation>

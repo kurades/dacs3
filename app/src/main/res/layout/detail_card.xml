@@ -15,7 +15,7 @@
         android:layout_height="match_parent">
 
         <ImageView
-            android:id="@+id/cardThubnail"
+            android:id="@+id/cardThumbnail"
             android:layout_width="84dp"
             android:layout_height="90dp"
             android:layout_marginStart="8dp"
@@ -33,7 +33,7 @@
             android:drawableStart="@drawable/book_borrow"
             android:text="TextView"
             app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintStart_toEndOf="@+id/cardThubnail" />
+            app:layout_constraintStart_toEndOf="@+id/cardThumbnail" />
 
         <TextView
             android:id="@+id/cardReturnDay"
@@ -54,7 +54,7 @@
             android:layout_marginTop="4dp"
             android:text="this is the title"
             android:textSize="18sp"
-            app:layout_constraintStart_toEndOf="@+id/cardThubnail"
+            app:layout_constraintStart_toEndOf="@+id/cardThumbnail"
             app:layout_constraintTop_toTopOf="parent" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>

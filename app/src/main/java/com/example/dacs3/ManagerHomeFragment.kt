@@ -5,49 +5,40 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.widget.FrameLayout
-import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.viewpager2.widget.ViewPager2
-import com.example.dacs3.Adapter.AdapterBorrowing
 import com.example.dacs3.Adapter.ProfilePagerAdapter
-import com.example.dacs3.databinding.FragmentHomeBinding
 import com.example.dacs3.databinding.FragmentManagerHomeBinding
-import com.example.dacs3.model.Book
-import com.example.dacs3.model.Location
 import com.google.android.material.tabs.TabLayoutMediator
 
-class HomeFragment : Fragment() {
-    private lateinit var homeBinding: FragmentHomeBinding
+class ManagerHomeFragment : Fragment() {
+    private lateinit var homeBinding: FragmentManagerHomeBinding
     private lateinit var viewPager: ViewPager2
-
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        homeBinding = FragmentHomeBinding.inflate(inflater,container,false)
+        homeBinding = FragmentManagerHomeBinding.inflate(inflater,container,false)
 
         val data = ArrayList<Fragment>()
-        data.add(HomeBrFragment())
-        data.add(HomeRcFragment())
-        data.add(HomeRqFragment())
+        data.add(MHRequestFragment())
+        data.add(MHConfirmFragment())
         val adapter = ProfilePagerAdapter(this,data)
-        viewPager = homeBinding.HomeViewPager
+        viewPager = homeBinding.mHViewPager
         viewPager.adapter = adapter
-        val tabLayout = homeBinding.HomeTabLayout
+        val tabLayout = homeBinding.mHTabLayout
         TabLayoutMediator(tabLayout,viewPager){tab,position ->
             when(position){
                 0 ->{
-                    tab.text = "Borrowing"
+                    tab.text = "Request book"
                 }
                 1 ->{
-                    tab.text = "Recent Books"
-                }
-                2 ->{
-                    tab.text = "Request Books"
+                    tab.text = "Confirmed"
                 }
             }
         }.attach()
 
         return homeBinding.root
     }
+
+
 }
