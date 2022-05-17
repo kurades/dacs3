@@ -4,6 +4,8 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="..\:/Project/dacs3/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.149" />
+        <entry key="..\:/Project/dacs3/app/src/main/res/drawable/book.xml" value="0.163" />
+        <entry key="..\:/Project/dacs3/app/src/main/res/drawable/book_blue.xml" value="0.163" />
         <entry key="..\:/Project/dacs3/app/src/main/res/drawable/book_borrow.xml" value="0.149" />
         <entry key="..\:/Project/dacs3/app/src/main/res/drawable/book_return.xml" value="0.149" />
         <entry key="..\:/Project/dacs3/app/src/main/res/drawable/bottom_stroke.xml" value="0.162" />
@@ -11,6 +13,7 @@
         <entry key="..\:/Project/dacs3/app/src/main/res/drawable/ic_baseline_auto_stories_24.xml" value="0.149" />
         <entry key="..\:/Project/dacs3/app/src/main/res/drawable/ic_baseline_favorite_24.xml" value="0.149" />
         <entry key="..\:/Project/dacs3/app/src/main/res/drawable/ic_baseline_home_24.xml" value="0.1695" />
+        <entry key="..\:/Project/dacs3/app/src/main/res/drawable/ic_baseline_library_add_check_24.xml" value="0.161" />
         <entry key="..\:/Project/dacs3/app/src/main/res/drawable/ic_baseline_qr_code_24.xml" value="0.1695" />
         <entry key="..\:/Project/dacs3/app/src/main/res/drawable/ic_baseline_shopping_basket_24.xml" value="0.149" />
         <entry key="..\:/Project/dacs3/app/src/main/res/drawable/line.xml" value="0.156" />
@@ -24,6 +27,7 @@
         <entry key="..\:/Project/dacs3/app/src/main/res/layout/activity_detail.xml" value="0.2" />
         <entry key="..\:/Project/dacs3/app/src/main/res/layout/activity_login.xml" value="0.22530996152201796" />
         <entry key="..\:/Project/dacs3/app/src/main/res/layout/activity_main.xml" value="0.264" />
+        <entry key="..\:/Project/dacs3/app/src/main/res/layout/activity_manager_main.xml" value="0.264" />
         <entry key="..\:/Project/dacs3/app/src/main/res/layout/activity_paycheck.xml" value="0.264" />
         <entry key="..\:/Project/dacs3/app/src/main/res/layout/activity_profile.xml" value="0.4" />
         <entry key="..\:/Project/dacs3/app/src/main/res/layout/avatar_dropdown.xml" value="0.4" />
@@ -35,6 +39,14 @@
         <entry key="..\:/Project/dacs3/app/src/main/res/layout/discover_parent_item.xml" value="0.22530996152201796" />
         <entry key="..\:/Project/dacs3/app/src/main/res/layout/fragment_discover.xml" value="0.2" />
         <entry key="..\:/Project/dacs3/app/src/main/res/layout/fragment_home.xml" value="0.4" />
+        <entry key="..\:/Project/dacs3/app/src/main/res/layout/fragment_home_br.xml" value="0.4" />
+        <entry key="..\:/Project/dacs3/app/src/main/res/layout/fragment_home_rc.xml" value="0.1671654553227875" />
+        <entry key="..\:/Project/dacs3/app/src/main/res/layout/fragment_home_rq.xml" value="0.1671654553227875" />
+        <entry key="..\:/Project/dacs3/app/src/main/res/layout/fragment_m_h_confirm.xml" value="0.1" />
+        <entry key="..\:/Project/dacs3/app/src/main/res/layout/fragment_m_h_request.xml" value="0.15151515151515152" />
+        <entry key="..\:/Project/dacs3/app/src/main/res/layout/fragment_manager_home.xml" value="0.264" />
+        <entry key="..\:/Project/dacs3/app/src/main/res/layout/fragment_manager_profile.xml" value="0.1410859341598974" />
+        <entry key="..\:/Project/dacs3/app/src/main/res/layout/fragment_manager_search.xml" value="0.1410859341598974" />
         <entry key="..\:/Project/dacs3/app/src/main/res/layout/fragment_profile.xml" value="0.2" />
         <entry key="..\:/Project/dacs3/app/src/main/res/layout/fragment_profile_info.xml" value="0.20521590423257802" />
         <entry key="..\:/Project/dacs3/app/src/main/res/layout/fragment_profile_payment.xml" value="0.1393758016246259" />
@@ -42,6 +54,7 @@
         <entry key="..\:/Project/dacs3/app/src/main/res/layout/fragment_setting.xml" value="0.18127404873877725" />
         <entry key="..\:/Project/dacs3/app/src/main/res/layout/login.xml" value="0.2" />
         <entry key="..\:/Project/dacs3/app/src/main/res/layout/recyclerview_parent_item.xml" value="0.264" />
+        <entry key="..\:/Project/dacs3/app/src/main/res/layout/request_item.xml" value="0.6" />
         <entry key="..\:/Project/dacs3/app/src/main/res/layout/search_children_item.xml" value="0.4" />
         <entry key="..\:/Project/dacs3/app/src/main/res/layout/search_item.xml" value="0.6" />
         <entry key="..\:/Project/dacs3/app/src/main/res/layout/search_parent_item.xml" value="0.1731509191962377" />
@@ -49,6 +62,7 @@
         <entry key="..\:/Project/dacs3/app/src/main/res/layout/subscription_item.xml" value="0.4" />
         <entry key="..\:/Project/dacs3/app/src/main/res/layout/top_navbar.xml" value="0.2" />
         <entry key="..\:/Project/dacs3/app/src/main/res/menu/main.xml" value="0.22530996152201796" />
+        <entry key="..\:/Project/dacs3/app/src/main/res/menu/manager_main.xml" value="0.11928174433518597" />
         <entry key="..\:/Project/dacs3/app/src/main/res/menu/navbar_top.xml" value="0.22530996152201796" />
         <entry key="..\:/Project/dacs3/app/src/main/res/xml/root_preferences.xml" value="0.20521590423257802" />
         <entry key="..\:/Project/dacs3/app/src/main/res/xml/searchable.xml" value="0.20521590423257802" />

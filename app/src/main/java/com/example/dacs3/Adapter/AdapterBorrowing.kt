@@ -1,9 +1,5 @@
 package com.example.dacs3.Adapter
 
-import android.content.Context
-import android.graphics.Bitmap
-import android.graphics.BitmapFactory
-import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -23,7 +19,7 @@ class AdapterBorrowing(private val dataSet: ArrayList<Book>) :
         val thubnail: ImageView
         init {
             title = view.findViewById(R.id.cardTitle)
-            thubnail = view.findViewById(R.id.cardThubnail)
+            thubnail = view.findViewById(R.id.cardThumbnail)
         }
     }
 

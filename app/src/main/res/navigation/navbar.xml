@@ -25,5 +25,20 @@
         android:name="com.example.dacs3.ProfileFragment"
         android:label="fragment_profile"
         tools:layout="@layout/fragment_profile" />
+    <fragment
+        android:id="@+id/homeBrFragment"
+        android:name="com.example.dacs3.HomeBrFragment"
+        android:label="fragment_home_br"
+        tools:layout="@layout/fragment_home_br" />
+    <fragment
+        android:id="@+id/homeRcFragment"
+        android:name="com.example.dacs3.HomeRcFragment"
+        android:label="fragment_home_rc"
+        tools:layout="@layout/fragment_home_rc" />
+    <fragment
+        android:id="@+id/homeRqFragment"
+        android:name="com.example.dacs3.HomeRqFragment"
+        android:label="fragment_home_rq"
+        tools:layout="@layout/fragment_home_rq" />
 
 </navigation>
