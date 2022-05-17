@@ -24,15 +24,6 @@
             android:textSize="25sp"
             android:textStyle="bold" />
 
-        <TextView
-            android:id="@+id/textView11"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginBottom="10dp"
-            android:text="The book Author"
-            android:textColor="@color/black"
-            android:textStyle="bold" />
-
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent">
@@ -51,7 +42,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginStart="8dp"
                 android:layout_marginTop="4dp"
-                android:text="Publisher :"
+                android:text="Author :"
                 android:textColor="@color/black"
                 android:textStyle="bold"
                 app:layout_constraintStart_toEndOf="@+id/imageView5"
@@ -62,7 +53,8 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="4dp"
-                android:text="Publisher name"
+                android:layout_marginStart="4dp"
+                android:text="Author name"
                 android:textColor="@color/primary"
                 app:layout_constraintStart_toEndOf="@+id/textView20"
                 app:layout_constraintTop_toTopOf="parent" />
@@ -71,13 +63,13 @@
                 android:id="@+id/ratingBar"
                 style="@style/Widget.AppCompat.RatingBar"
                 android:layout_width="wrap_content"
-                android:layout_height="42dp"
+                android:layout_height="40dp"
                 android:layout_marginStart="8dp"
                 android:indeterminate="false"
                 android:isIndicator="true"
                 android:numStars="5"
                 android:progressTint="@color/primary"
-                android:rating="4"
+                android:rating="4.5"
                 android:scaleX="0.5"
                 android:scaleY="0.5"
                 android:transformPivotX="0dp"
@@ -100,6 +92,7 @@
                 android:id="@+id/textView23"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_marginStart="4dp"
                 android:text="Face 1>Row 2>Column 3"
                 app:layout_constraintStart_toEndOf="@+id/textView22"
                 app:layout_constraintTop_toBottomOf="@+id/ratingBar" />
@@ -109,7 +102,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="8dp"
-                android:text="Genres :"
+                android:text="Category :"
                 android:textColor="@color/black"
                 android:textStyle="bold"
                 app:layout_constraintStart_toEndOf="@+id/imageView5"
@@ -120,21 +113,11 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Wibu, Alime"
+                android:layout_marginStart="4dp"
                 app:layout_constraintStart_toEndOf="@+id/textView24"
                 app:layout_constraintTop_toBottomOf="@+id/textView23" />
 
-            <ToggleButton
-                android:id="@+id/favoriteToggle"
-                android:layout_width="37dp"
-                android:layout_height="35dp"
-                android:layout_centerHorizontal="true"
-                android:layout_centerVertical="true"
-                android:layout_marginStart="104dp"
-                android:background="@android:color/transparent"
-                android:textOff=""
-                android:textOn=""
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintStart_toStartOf="parent" />
+
 
             <TextView
                 android:id="@+id/textView7"
@@ -144,6 +127,7 @@
                 android:text="Quantity :"
                 android:textColor="@color/black"
                 android:textStyle="bold"
+
                 app:layout_constraintStart_toEndOf="@+id/imageView5"
                 app:layout_constraintTop_toBottomOf="@+id/textView24" />
 
@@ -151,7 +135,7 @@
                 android:id="@+id/textView8"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="2dp"
+                android:layout_marginStart="4dp"
                 android:text="4"
                 app:layout_constraintStart_toEndOf="@+id/textView7"
                 app:layout_constraintTop_toBottomOf="@+id/textView25" />
@@ -172,6 +156,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="2020"
+                android:layout_marginStart="4dp"
                 app:layout_constraintStart_toEndOf="@+id/textView10"
                 app:layout_constraintTop_toBottomOf="@+id/textView8" />
 
@@ -245,8 +230,8 @@
 
             <EditText
                 android:id="@+id/editTextTextPersonName4"
-                android:layout_width="223dp"
-                android:layout_height="48dp"
+                android:layout_width="250dp"
+                android:layout_height="40dp"
                 android:layout_marginStart="4dp"
                 android:layout_marginTop="36dp"
                 android:background="@drawable/custom_input"
@@ -260,13 +245,14 @@
 
             <Button
                 android:id="@+id/button5"
-                android:layout_width="wrap_content"
-                android:layout_height="48dp"
+                android:layout_width="0dp"
+                android:layout_height="40dp"
                 android:layout_marginStart="4dp"
                 android:layout_marginTop="36dp"
                 android:background="@color/primary"
                 android:text="Send"
                 android:textColor="@color/white"
+                app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toEndOf="@+id/editTextTextPersonName4"
                 app:layout_constraintTop_toTopOf="parent" />
 
@@ -274,6 +260,7 @@
                 android:id="@+id/CommentRecyclerView"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
                 android:layout_marginStart="4dp"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName4"
